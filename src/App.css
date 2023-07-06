@@ -1,38 +1,108 @@
-.App {
+body {
+  margin: 0;
+  background: linear-gradient(90deg,#4286f4,#373b44);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.categories {display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  background-color: transparent;
+  font-size: 1.2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category-box {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.category-line {
+  margin-top: 5px;
+  font-size: 12px;
+  color:rgb(30,58,138);
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.category-button {
+  text-transform:capitalize;
+  font-weight: 700;
+  font-size: 30px;
+  box-shadow: 0 0 10px rgba(134, 133, 133, 0.3);
+  width: 200px;
+  height: 150px;
+  background-color: #FFFFFF;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color:rgb(30,58,138);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.popup-content {
+  background: linear-gradient(90deg, rgb(44,83,100),rgb(15,32,39));
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  color:white;
+  border:2px solid gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.close-button {
+  text-align: right;
+  margin-left: 80%;
+  width: 10%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color:white;
+}
+
+.next-joke-button {
+  margin-top: 10px;
+  background-color:blue;
+  font-size: 20px;
+  font-weight: 700;
+  width:150px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  color: rgb(34 197 94);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-10px);
   }
 }
