@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/chuck-norries/static/css/main.9691b5b4.css",
+    "main.js": "/chuck-norries/static/js/main.66eeed03.js",
+    "index.html": "/chuck-norries/index.html",
+    "main.9691b5b4.css.map": "/chuck-norries/static/css/main.9691b5b4.css.map",
+    "main.66eeed03.js.map": "/chuck-norries/static/js/main.66eeed03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9691b5b4.css",
+    "static/js/main.66eeed03.js"
+  ]
+}
